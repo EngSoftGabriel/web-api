@@ -6,6 +6,11 @@ const express = require("express");
 
 const app = express();
 
+app.get("/clientes/id", (req, res) => {
+    const id = parseInt(req.params.id);
+    res.json(db.selectCustomer(id));
+})
+
 app.get("/clientes", (req, res) => {
     res.json(db.selectCustomers());
 })

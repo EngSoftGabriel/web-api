@@ -3,7 +3,7 @@ const customers = [{
     nome: "Gabriel",
     idade: 27,
     uf: "RJ"
-}]
+}];
 
 function selectCustomers(){
     return customers;
@@ -13,4 +13,4 @@ function selectCustomer(){
     return customers.find(c => c.id === id);
 }
 
-module.exports = { selectCustomers, selectCustomer }
+module.exports = { selectCustomers, selectCustomer };
