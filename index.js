@@ -6,7 +6,7 @@ const express = require("express");
 
 const app = express();
 
-app.get("/clientes/id", (req, res) => {
+app.get("/clientes/:id", (req, res) => {
     const id = parseInt(req.params.id);
     res.json(db.selectCustomer(id));
 })

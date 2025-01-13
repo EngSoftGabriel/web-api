@@ -9,7 +9,7 @@ function selectCustomers(){
     return customers;
 }
 
-function selectCustomer(){
+function selectCustomer(id){
     return customers.find(c => c.id === id);
 }
 
